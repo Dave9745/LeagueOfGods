@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
          <title>{% block title %}League of Gods - Login{% endblock %}</title>
         {% block stylesheets %}
-             <link href="{{ asset('public/css/loginPage.css') }}" rel="stylesheet" />
+            <link href="{{ asset('public/css/loginPage.css') }}" rel="stylesheet" />
         {% endblock %}
     </head>
     <body>
+        <img src="{{ asset('public/css/pictures/Bronze_wings.png') }}" class="img-responsive" id="logo" alt="..."/><span id="name"> League Of Gods </span>
         <div class="form">
             <div>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
